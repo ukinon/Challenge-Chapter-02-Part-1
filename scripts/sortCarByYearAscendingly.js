@@ -18,11 +18,12 @@ function sortCarByYearAscendingly(cars) {
 
   // Clone array untuk menghindari side-effect
   // Apa itu side effect?
-  const result = bubbleSortAscending(cars);
+  const result = [...cars];
+  const sortedResult = bubbleSortAscending(cars);
 
   // Rubah code ini dengan array hasil sorting secara ascending
-  console.log(result);
-  return result;
+  console.log(sortedResult);
+  return sortedResult;
 }
 
 
